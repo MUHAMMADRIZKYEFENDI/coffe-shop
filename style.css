@@ -1,0 +1,392 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+.all-content {
+    background: #f7f5f2;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #b2744c;
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Navbar */
+#navbar {
+    background-color: #b2744c;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 0;
+}
+
+#logo img {
+    border-radius: 10px;
+    width: 160px;
+    margin-left: 40px;
+}
+
+.navbar-nav {
+    margin-left: 50px;
+}
+
+.nav-item .nav-link {
+    color: white;
+    margin-left: 10px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.nav-item .nav-link:hover {
+    background: #f7f5f2;
+    border-radius: 5px;
+    color: #b2744c;
+}
+
+#navbar form button {
+    background: black;
+    color: white;
+    border: 1px solid white;
+}
+
+/* Home content */
+#home {
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(14, 13, 13, 0.3), rgba(0, 0, 0, 0.3)), url(foto/asli.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    padding: 0 56px;
+}
+
+.content h3 {
+    font-size: 50px;
+    color: white;
+}
+
+.content p {
+    margin-top: 10px;
+    color: white;
+}
+
+#btn {
+    width: 150px;
+    height: 36px;
+    margin-top: 20px;
+    background: white;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    transition: background 0.5s ease;
+    cursor: pointer;
+}
+
+#btn:hover {
+    background: #b2744c;
+    color: white;
+}
+
+/* About */
+#about {
+    width: 100%;
+    background: #f7f5f2;
+    font-family: 'Roboto', sans-serif;
+    padding: 70px 0;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 50px;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.heading span {
+    color: #b2744c;
+}
+
+.about-text {
+    font-size: 1.2em;
+    /* Ukuran font yang lebih besar untuk keterbacaan yang lebih baik */
+    color: #333;
+    /* Warna teks yang lebih gelap untuk kontras yang lebih baik */
+    line-height: 1.8;
+    /* Jarak antar baris yang lebih luas untuk meningkatkan keterbacaan */
+    padding: 20px;
+    /* Menambahkan padding untuk ruang yang lebih baik */
+    background-color: white;
+    /* Latar belakang putih untuk teks */
+    border-radius: 10px;
+    /* Sudut melengkung */
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    /* Bayangan untuk memberikan efek kedalaman */
+    max-width: 800px;
+    /* Membatasi lebar maksimum untuk menjaga agar teks tetap terfokus */
+    margin: 0 auto;
+    /* Mengatur margin otomatis agar teks terpusat */
+}
+
+#about-btn {
+    width: 200px;
+    height: 36px;
+    background: transparent;
+    border: 2px solid #b2744c;
+    color: #b2744c;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.5s;
+    cursor: pointer;
+    margin-top: 20px;
+    /* Jarak di atas tombol untuk pemisahan yang lebih baik */
+}
+
+#about-btn:hover {
+    background: #b2744c;
+    color: white;
+}
+
+/* Responsiveness for about section */
+@media screen and (max-width: 766px) {
+    #about {
+        height: auto;
+    }
+
+    .about-content {
+        text-align: center;
+    }
+
+    .about-text {
+        font-size: 1em;
+        /* Mengurangi ukuran font untuk tampilan mobile */
+        padding: 15px;
+        /* Mengurangi padding di tampilan mobile */
+    }
+}
+
+/* Menu */
+.menu {
+    width: 100%;
+    background: #f7f5f2;
+    font-family: 'Roboto', sans-serif;
+    padding: 50px 0;
+}
+
+.heading3 {
+    text-align: center;
+    font-size: 30px;
+    color: #b2744c;
+    font-weight: bold;
+    border-bottom: 2px solid #b2744c;
+    padding-bottom: 10px;
+}
+
+.menu .card {
+    background: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: transform 0.3s ease;
+}
+
+.menu .card:hover {
+    transform: translateY(-10px);
+}
+
+.menu h3 {
+    color: #b2744c;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.menu p {
+    font-size: 16px;
+    color: #b2744c;
+    padding-top: 10px;
+}
+
+.menu p span {
+    float: right;
+    cursor: pointer;
+}
+
+/* Gallery */
+#gallary {
+    width: 100%;
+    padding: 60px 0;
+    background: #f7f5f2;
+}
+
+#gallary h1 {
+    text-align: center;
+    color: black;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+#gallary h1 span {
+    color: #b2744c;
+}
+
+#gallary .card {
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+#gallary .card img {
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#gallary .card:hover {
+    transform: scale(1.05);
+}
+
+/* Contact */
+.contact {
+    width: 100%;
+    background: #f7f5f2;
+    padding: 70px 0;
+}
+
+.contact .container {
+    width: 100%;
+    height: auto;
+    background: white;
+    background: linear-gradient(90deg, white 80%, #b2744c 20%);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.heading6 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.contact p {
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+}
+
+.contact input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #b2744c;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+#contact-btn {
+    width: 100%;
+    height: 36px;
+    border: none;
+    background: #b2744c;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+/* Responsiveness for contact section */
+@media screen and (max-width: 766px) {
+    .contact .container {
+        background: white;
+        padding: 20px;
+    }
+
+    #col {
+        width: 100%;
+        background: #b2744c;
+        margin-top: 30px;
+    }
+
+    .contact input {
+        width: 100%;
+    }
+}
+
+/* Footer */
+#footer {
+    width: 100%;
+    background: #b2744c;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer-logo img {
+    width: 180px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#footer .socail-links i {
+    font-size: 17px;
+    margin: 10px;
+    padding: 10px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.credite {
+    color: white;
+    margin-top: 20px;
+}
+
+.credite a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.credite a span {
+    color: black;
+}
+
+.copyright span {
+    color: black;
+}
+
+/* Scroll-to-top button */
+.arrow {
+    position: fixed;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    bottom: 40px;
+    right: 50px;
+    background: #b2744c;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    display: none;
+    /* Disembunyikan pada awal */
+    z-index: 100;
+}
+
+/* Display the scroll-to-top button when the user scrolls down */
+.show {
+    display: block;
+}
