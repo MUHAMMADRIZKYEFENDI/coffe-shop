@@ -1,4 +1,4 @@
-# STORYBPARD
+# STORYBOARD
 1.	Halaman Utama (Halaman - 1): 
 Saat pengguna pertama kali membuka aplikasi, mereka akan langsung melihat halaman utama yang menampilkan sambutan seperti "Welcome to Coffee Shop" serta tombol untuk mengeksplorasi lebih lanjut. Pengguna dapat mengklik tombol tersebut untuk mempelajari lebih lanjut tentang kedai kopi ini. 
   
